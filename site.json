@@ -1,0 +1,38 @@
+{
+  "title": "BAIYAN",
+  "author": "baiyan",
+  "subtitle": "",
+  "address": "/",
+  "theme": "default",
+  "meta": {
+    "mode":"history",
+    "menus":[
+      {
+        "title":"首页",
+        "type":"router-link",
+        "name":"Home"
+      },
+      {
+        "title":"归档",
+        "type":"router-link",
+        "name":"Archive"
+      },
+      {
+        "title":"标签",
+        "type":"router-link",
+        "name":"Tag"
+      },
+      {
+        "title":"GITHUB",
+        "type":"link",
+        "path":"https://github.com/obaiyan",
+        "target":"_blank"
+      }
+    ]
+  },
+  "theme_directory": "theme",
+  "content_directory": "content",
+  "data_directory": "data",
+  "build_directory": "build",
+  "publish_directory": "publish"
+}
