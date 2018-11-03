@@ -9,22 +9,18 @@
     "menus":[
       {
         "title":"首页",
-        "type":"router-link",
-        "name":"Home"
+        "path":"/index.html"
       },
       {
         "title":"归档",
-        "type":"router-link",
-        "name":"Archive"
+        "path":"/archive.html"
       },
       {
         "title":"标签",
-        "type":"router-link",
-        "name":"Tag"
+        "path":"/tag.html"
       },
       {
-        "title":"GITHUB",
-        "type":"link",
+        "title":"Github",
         "path":"https://github.com/obaiyan",
         "target":"_blank"
       }
