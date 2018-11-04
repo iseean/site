@@ -13,11 +13,11 @@
       },
       {
         "title":"归档",
-        "path":"/archive.html"
+        "path":"/archives.html"
       },
       {
         "title":"标签",
-        "path":"/tag.html"
+        "path":"/tags.html"
       },
       {
         "title":"Github",

@@ -4,11 +4,11 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <title>标签|{{@root/site/title}}</title>
-<link rel="shortcut icon" href="/logo.png"><link href="/./assets/tag.css" rel="stylesheet"></head>
+  <title>归档|{{@root/site/title}}</title>
+<link rel="shortcut icon" href="/logo.png"><link href="/./assets/archives.css" rel="stylesheet"></head>
 
 <body>
-  <div class="tag-wraper">
+  <div class="archive-wraper">
     <header class="header-wrapper">
     <a class="one" href="">
         <div class="logo" style="background-image:url('/assets/logo.png')"></div>
@@ -28,20 +28,14 @@
     </ul>
 </header>
     <div class="content-wrapper">
-      <h1>标签</h1>
-      <div class="tags">
-        {{#each @root/tags}}
-        <a class="tag">{{name}}</a>
-        {{/each}}
-      </div>
-      {{#each @root/tags}}
       <div>
+        {{#each @root/archives}}
         <h2>{{name}}</h2>
         <ul class="posts">
           {{#each list}}
           <li class="post">
             <div class="meta">
-              <time>{{dateformat create_time}}7</time>
+              <time>{{dateformat create_time}}</time>
             </div>
             <span>
               <a href="/post/{{id}}.html">{{title}}</a>
@@ -49,8 +43,8 @@
           </li>
           {{/each}}
         </ul>
+        {{/each}}
       </div>
-      {{/each}}
     </div>
     <footer class="footer-wrapper">
     <div class="footer-left"> Copyright © 2018 BAIYAN </div>
@@ -66,7 +60,7 @@
         </nav>
     </div>
 </footer>
-  </div>
-<script type="text/javascript" src="/./assets/tag.js"></script></body>
+
+<script type="text/javascript" src="/./assets/archives.js"></script></body>
 
 </html>

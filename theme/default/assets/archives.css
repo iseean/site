@@ -241,21 +241,21 @@ blockquote footer cite:before {
   font-size: 1.2em;
   font-weight: bold;
 }
-.index-wraper {
+.archive-wraper {
   padding: 32px;
 }
-.index-wraper h1 {
+.archive-wraper h1 {
   color: #2bbc8a;
 }
-.index-wraper .posts {
+.archive-wraper .posts {
   padding: 0;
 }
-.index-wraper .posts .post {
+.archive-wraper .posts .post {
   list-style-type: none;
   margin-left: 0;
   margin-bottom: 1rem;
 }
-.index-wraper .posts .post .meta {
+.archive-wraper .posts .post .meta {
   display: inline-block;
   font-size: 14px;
   color: #666;
@@ -263,26 +263,26 @@ blockquote footer cite:before {
   margin-right: 16px;
 }
 @media (min-width: 640px) {
-  .index-wraper {
+  .archive-wraper {
     width: 100%;
     max-width: 900px;
     margin: 0px auto;
   }
-  .index-wraper .content-wrapper {
+  .archive-wraper .content-wrapper {
     max-width: 900px;
     margin: 0 auto;
     padding: 16px;
   }
-  .index-wraper .posts .post {
+  .archive-wraper .posts .post {
     display: flex;
     margin-bottom: 5px;
   }
-  .index-wraper .posts .post .meta {
+  .archive-wraper .posts .post .meta {
     text-align: left;
   }
 }
 @media (max-width: 640px) {
-  .index-wraper {
+  .archive-wraper {
     padding: 16px;
   }
 }

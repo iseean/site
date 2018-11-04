@@ -241,21 +241,31 @@ blockquote footer cite:before {
   font-size: 1.2em;
   font-weight: bold;
 }
-.index-wraper {
+.tag-wraper {
   padding: 32px;
 }
-.index-wraper h1 {
+.tag-wraper h1 {
   color: #2bbc8a;
 }
-.index-wraper .posts {
+.tag-wraper .tags {
+  margin: 10px 0px;
+}
+.tag-wraper .tags .tag {
+  display: inline-block;
+  margin: 5px 10px 5px 5px;
+}
+.tag-wraper .tags .tag:first-child {
+  margin: 5px 10px 5px 0px;
+}
+.tag-wraper .posts {
   padding: 0;
 }
-.index-wraper .posts .post {
+.tag-wraper .posts .post {
   list-style-type: none;
   margin-left: 0;
   margin-bottom: 1rem;
 }
-.index-wraper .posts .post .meta {
+.tag-wraper .posts .post .meta {
   display: inline-block;
   font-size: 14px;
   color: #666;
@@ -263,26 +273,26 @@ blockquote footer cite:before {
   margin-right: 16px;
 }
 @media (min-width: 640px) {
-  .index-wraper {
+  .tag-wraper {
     width: 100%;
     max-width: 900px;
     margin: 0px auto;
   }
-  .index-wraper .content-wrapper {
+  .tag-wraper .content-wrapper {
     max-width: 900px;
     margin: 0 auto;
     padding: 16px;
   }
-  .index-wraper .posts .post {
+  .tag-wraper .posts .post {
     display: flex;
     margin-bottom: 5px;
   }
-  .index-wraper .posts .post .meta {
+  .tag-wraper .posts .post .meta {
     text-align: left;
   }
 }
 @media (max-width: 640px) {
-  .index-wraper {
+  .tag-wraper {
     padding: 16px;
   }
 }
