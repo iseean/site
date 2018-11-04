@@ -414,6 +414,7 @@ blockquote footer cite:before {
   .post-wrapper .center {
     max-width: 900px;
     margin: 0px auto;
+    padding: 0px 32px;
   }
   .post-wrapper .content-wrapper {
     max-width: 900px;
