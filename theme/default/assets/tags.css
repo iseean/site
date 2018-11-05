@@ -179,6 +179,7 @@ code {
   -ms-hyphens: manual;
   -webkit-hyphens: manual;
   hyphens: manual;
+  background-color: #0c0c0c;
 }
 a {
   text-decoration: none;
