@@ -4,7 +4,7 @@
   "description": "DESCRIPTION",
   "id": "8128a900-3a66-4253-baaa-b2890d281e29",
   "meta": null,
-  "tags": [],
+  "tags": ["GitHub", "HTTPS"],
   "target": "POST",
   "title": "使用 Github Pages 部署静态网站"
 }
@@ -14,19 +14,24 @@
 
 目前还不知道更换证书或更换 VPS 能不能解决这个问题（感觉即使能解决也不是持久之计，有条件的同学还是备案用境内的 VPS 吧）。由于域名转入备案太麻烦，而且正巧发现 Github Pages 对自定义域名支持 HTTPS 了，所以决定吧网站迁移到 Github Pages 上。
 
+``` java
+System.out.print("Hello");
+```
+
+
 # 迁移文件
 
 ## 选择站点类型
 
-Github Pages 站点的静态文件都保存在 Repository 中。Github Pages 提供了 User or organization site 和 Project site 两种方式托管静态文件。
+GitHub Pages 站点的静态文件都保存在 Repository 中。GitHub Pages 提供了 User or organization site 和 Project site 两种方式托管静态文件。
 
 两种方式基本没有什么区别。由于我要部署的是个人博客，因此我选择使用 User or organization site。
 
-顺带说一句，Github Pages 是支持 Jekyll 模版语法。所以可以通过 Jekyll 来“动态”生成网站。
+顺带说一句，GitHub Pages 是支持 Jekyll 模版语法。所以可以通过 Jekyll 来“动态”生成网站。
 
 ## 创建&配置Repository
 
-首先需要创建一个以 username.github.io 命名的 Repository。**注意替换 `username`为你的用户名**。
+首先需要创建一个以 username.GitHub.io 命名的 Repository。**注意替换 `username`为你的用户名**。
 
 创建好 Repository 后按正常的提交代码的流程将站点文件提交到 master 分支。
 
@@ -46,9 +51,9 @@ Github Pages 站点的静态文件都保存在 Repository 中。Github Pages 提
 
 ``` bash
 $ dig mydomain.com +noall +answer
-mydomain.com	3600	IN A	XXX.XXX.XXX.XXX
+  mydomain.com	3600	IN A	XXX.XXX.XXX.XXX
 $ dig username.github.io +noall +answer
-username.github.io	3600	IN A	XXX.XXX.XXX.XXX
+  username.github.io	3600	IN A	XXX.XXX.XXX.XXX
 ```
 
 XXX.XXX.XXX.XXX 为服务器 IP，两个命令的 IP 如果一致的话，说明已经生效了。
@@ -71,5 +76,5 @@ XXX.XXX.XXX.XXX 为服务器 IP，两个命令的 IP 如果一致的话，说明
 # Tips
 
 + 注意上文中出现的 username 全部需要替换为也登陆使用的用户名。
-+ Github Pages 支持一个站点同时绑定顶级域名和 www 子域名，但是据文档所说每个站点只能绑定一个非 www 的子域名。
++ GitHub Pages 支持一个站点同时绑定顶级域名和 www 子域名，但是据文档所说每个站点只能绑定一个非 www 的子域名。
 + 如果之前域名有解析到其他位置的话，在进行操作之前可以先将域名的 TTL 设置短一点，方便修改解析后快速生效。

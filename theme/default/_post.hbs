@@ -19,7 +19,7 @@
           {{#mdtoc content as |toc|}}
           {{#each toc as |item|}}
           <li class="t{{item.level}}" >
-            <a href="#anchor_{{hash item/name}}">{{item/name}}</a>
+            <a href="#anchor_{{@index}}">{{item/name}}</a>
           </li>
           {{/each}}
           {{/mdtoc}}
